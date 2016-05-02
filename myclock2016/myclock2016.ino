@@ -34,9 +34,9 @@ void loop(){
   }
  }
  i=millis()%1000;
- lcd.setCursor(0,1);
- lcd.print(" ms=");
- lcd.setCursor(3,1);
+ lcd.setCursor(1,1);
+ lcd.print("ms=");
+ lcd.setCursor(4,1);
  millis()%200>=185||millis()%200<=15?j=0:j=200;
  j+=(((millis()%1000)/200)*200);
  if(j>=1000)j-=1000;
